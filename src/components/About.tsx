@@ -22,8 +22,8 @@ const About = () => {
       id="about"
       ref={ref}
       className="section-padding bg-cream opacity-0"
-      style={{ animationDelay: "0.1s" }}
-    >
+      style={{ animationDelay: "0.1s" }}>
+
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div>
@@ -31,10 +31,10 @@ const About = () => {
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-navy mb-6 leading-tight">
             A Twist on <span className="text-primary italic">Florida Tradition</span>
           </h2>
-          <p className="text-muted-foreground font-body text-lg leading-relaxed mb-4">
-            Born on the sun-soaked docks of the Florida Keys, Twisted Lobster reimagines classic coastal dining.
-            Every dish starts with the freshest catch — pulled straight from local waters and prepared with bold,
-            unexpected flavors.
+          <p className="text-muted-foreground font-body text-lg leading-relaxed mb-4">Born on the sun-soaked docks of the Florida, Twisted Lobster reimagines classic coastal dining. Every dish starts with the freshest catch — pulled straight from local waters and prepared with bold, unexpected flavors.
+
+
+
           </p>
           <p className="text-muted-foreground font-body text-lg leading-relaxed">
             Our chef's signature twist? Taking timeless seafood favorites and elevating them with
@@ -55,8 +55,8 @@ const About = () => {
           <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gold/20 rounded-lg -z-10" />
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;
