@@ -2,35 +2,222 @@ import { useEffect, useRef } from "react";
 
 const categories = [
   {
-    title: "Starters",
+    title: "The App Trap",
     items: [
-      { name: "Lobster Bisque", desc: "Creamy, rich, with a hint of sherry", price: "$18" },
-      { name: "Seared Diver Scallops", desc: "Citrus beurre blanc, microgreens", price: "$24" },
-      { name: "Coconut Shrimp", desc: "Thai chili sauce, toasted coconut", price: "$16" },
+      {
+        name: "Salmon Bites",
+        desc: "Fresh cut salmon breaded and fried, tossed in sesame ginger sauce, served with coconut jasmine rice",
+        price: "$12.99",
+      },
+      {
+        name: "Coconut Shrimp",
+        desc: "Coconut and panko breaded shrimp",
+        price: "$13.99",
+      },
+      {
+        name: "Lobster Bites",
+        desc: "1/4 lb fried diced lobster tail pieces",
+        price: "$13.99",
+      },
+      {
+        name: "Tempura Shrimp",
+        desc: "Over coconut rice with Asian ginger drizzle",
+        price: "$13.97",
+      },
+      {
+        name: "Big Boomin' Shrimp",
+        desc: "1/2 lb of breaded and tossed shrimp atop coconut jasmine rice",
+        price: "$16.99",
+      },
+      {
+        name: "Soflo Smoked Fish Dip",
+        desc: "Smoked mahi, sailfish and more—made into a creamy dip, served with jalapeños & club crackers",
+        price: "$12.99",
+      },
+      {
+        name: "Thai Calamari",
+        desc: "Fried rings and tenticles with banana peppers, drizzled with ginger Asian sauce",
+        price: "$15.99",
+      },
+      {
+        name: "Seared Ahi Tuna",
+        desc: "Sesame encrusted saku tuna with Vietnamese sauce and mango",
+        price: "$14.99",
+      },
+      {
+        name: "Clam Poutine Fries",
+        desc: "Battered fries topped with clam strips, clam chowder and bacon bits",
+        price: "$16.99",
+      },
+      {
+        name: "Clam Strips",
+        desc: "Fresh NE clams hand breaded and fried",
+        price: "$9.99",
+      },
+      {
+        name: "Whole Bellys",
+        desc: "Fresh NE clams hand breaded and fried",
+        price: "$17.99",
+      },
     ],
   },
   {
-    title: "Signature Lobster",
+    title: "Eat Fresh & Eat It Raw!",
     items: [
-      { name: "The Twisted Tail", desc: "Butter-poached tail, truffle mash, gold leaf", price: "$62" },
-      { name: "Lobster Mac & Cheese", desc: "Three-cheese blend, herb crust", price: "$38" },
-      { name: "Grilled Whole Lobster", desc: "Garlic herb butter, grilled corn", price: "$58" },
+      {
+        name: "Virginia Blues on the Half",
+        desc: "Raw oysters",
+        price: "1/2 dozen $14 • 1 dozen $25",
+      },
+      {
+        name: "Northeast Oyster of the Day",
+        desc: "Raw oysters",
+        price: "1/2 dozen $16 • 1 dozen $28",
+      },
+      {
+        name: "Peel & Eat Gulf Shrimp",
+        desc: "Chilled shrimp",
+        price: "1/2 pound $14 • 1 pound $25",
+      },
+      {
+        name: "Snow Crab",
+        desc: "Chilled crab",
+        price: "1.25 pound $26",
+      },
     ],
   },
   {
-    title: "From the Sea",
+    title: "Some Soup For You!",
     items: [
-      { name: "Pan-Seared Grouper", desc: "Mango salsa, jasmine rice", price: "$42" },
-      { name: "Blackened Mahi-Mahi", desc: "Key lime aioli, seasonal veg", price: "$36" },
-      { name: "Seafood Tower", desc: "Oysters, shrimp, crab, lobster", price: "$95" },
+      { name: "Clam Chowder", desc: "", price: "Cup $6 • Bowl $10" },
+      { name: "Lobster Bisque", desc: "", price: "Cup $7 • Bowl $11" },
     ],
   },
   {
-    title: "Sweet Finales",
+    title: 'The "Green" Stuff',
     items: [
-      { name: "Key Lime Pie", desc: "Graham crust, torched meringue", price: "$14" },
-      { name: "Crème Brûlée", desc: "Madagascar vanilla bean", price: "$15" },
-      { name: "Chocolate Lava Cake", desc: "Molten center, sea salt caramel", price: "$16" },
+      {
+        name: "Caesar Salad",
+        desc: "Add: Chicken $14.99 • Salmon $17.99 • Shrimp $15.99",
+        price: "$9.99",
+      },
+      {
+        name: "Greek Salad",
+        desc: "Add: Chicken $15.99 • Salmon $18.99 • Shrimp $16.99 • Ahi Tuna $18.99",
+        price: "$11.99",
+      },
+      {
+        name: "Lobster Cobb",
+        desc: "Blue cheese, egg, bacon, tomato, cucumber w/ champagne vinaigarette",
+        price: "$21.99",
+      },
+    ],
+  },
+  {
+    title: "Handhelds",
+    items: [
+      { name: "Cheeseburger", desc: "Add bacon $1", price: "$14.99" },
+      { name: "Chicken Breast Sandwich", desc: "With bacon and swiss", price: "$14.99" },
+      {
+        name: "Breaded Haddock Sandwich",
+        desc: "A large breaded haddock filet",
+        price: "$17.99",
+      },
+      {
+        name: "Soft Shell Crab (2-Jumbo)",
+        desc: "Fried with lettuce, tomato, onion & chipotle aioli",
+        price: "$19.99",
+      },
+      {
+        name: "Gulf Grouper Sandwich",
+        desc: "Blackened, fried or broiled",
+        price: "$20.99",
+      },
+      {
+        name: "New England Lobster Roll",
+        desc: "Hot or cold… your choice",
+        price: "$21.99",
+      },
+      {
+        name: "Triple Tail Reuben",
+        desc: "Lightly breaded and fried filet of triple tail on marble rye with swiss, 1000 & kraut",
+        price: "$18.99",
+      },
+      {
+        name: "Blackened Mahi Taco's (3)",
+        desc: "Blackened mahi with cilantro cream, cabbage and pico de gallo served with coconut jasmine rice",
+        price: "$15.99",
+      },
+      {
+        name: "Boom Shrimp Taco's (3)",
+        desc: "Large shrimp tossed in spicy boom sauce atop cilantro cream, cabbage and pico de gallo served with coconut jasmine rice",
+        price: "$15.99",
+      },
+      {
+        name: "Lobster Chipolte Taco (3)",
+        desc: "Lightly breaded and fried with a chipolte cream sauce and cabbage, served with coconut jasmine rice",
+        price: "$21.99",
+      },
+    ],
+  },
+  {
+    title: "Twisted Baskets",
+    items: [
+      {
+        name: "Large Shrimp 1/2 lb",
+        desc: "Served with pineapple slaw & battered fries • Breaded, blackened or grilled",
+        price: "$16.99",
+      },
+      {
+        name: "Fried Oysters",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$17.99",
+      },
+      {
+        name: "Soft Shell Crab (2)",
+        desc: "Served with pineapple slaw & battered fries • Breaded and garlic buttered",
+        price: "$19.99",
+      },
+      {
+        name: "Fish N Chips",
+        desc: "Served with pineapple slaw & battered fries • Beer battered cod",
+        price: "$16.99",
+      },
+      {
+        name: "Beer Battered Haddock",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$17.99",
+      },
+      {
+        name: "Ipswich Clams",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$25.99",
+      },
+      {
+        name: "Shrimp & Scallops",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$17.99",
+      },
+      {
+        name: "Chicken Tenders",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$14.99",
+      },
+      {
+        name: "NE Clam Strips",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$15.99",
+      },
+      {
+        name: "Grouper Basket",
+        desc: "Served with pineapple slaw & battered fries",
+        price: "$17.99",
+      },
+      {
+        name: "Basket Add-Ons",
+        desc: "Add Shrimp $6.99 • Add Scallops (4) $10.99 • Add Oysters $13.99",
+        price: "",
+      },
     ],
   },
 ];
@@ -61,7 +248,9 @@ const MenuHighlights = () => {
     >
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <p className="text-primary font-body text-sm uppercase tracking-[0.3em] mb-4">Curated Selection</p>
+          <p className="text-primary font-body text-sm uppercase tracking-[0.3em] mb-4">
+            Curated Selection
+          </p>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-foreground mb-4">
             Menu <span className="italic text-primary">Highlights</span>
           </h2>
@@ -76,6 +265,7 @@ const MenuHighlights = () => {
               <h3 className="font-heading text-2xl text-gold border-b border-gold/30 pb-3">
                 {cat.title}
               </h3>
+
               {cat.items.map((item) => (
                 <div
                   key={item.name}
@@ -85,9 +275,13 @@ const MenuHighlights = () => {
                     <p className="font-heading text-lg text-secondary-foreground group-hover:text-primary transition-colors">
                       {item.name}
                     </p>
-                    <p className="text-secondary-foreground/50 font-body text-sm">{item.desc}</p>
+                    {item.desc ? (
+                      <p className="text-secondary-foreground/50 font-body text-sm">{item.desc}</p>
+                    ) : null}
                   </div>
-                  <span className="text-gold font-heading text-lg whitespace-nowrap">{item.price}</span>
+                  {item.price ? (
+                    <span className="text-gold font-heading text-lg whitespace-nowrap">{item.price}</span>
+                  ) : null}
                 </div>
               ))}
             </div>
