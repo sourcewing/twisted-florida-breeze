@@ -9,8 +9,8 @@ const features = [
   },
   {
     icon: UtensilsCrossed,
-    title: "Award-Winning Chef",
-    desc: "Chef Marco brings 20 years of Michelin-star experience and a passion for coastal cuisine.",
+    title: "4,000+ Satisfied Customers!",
+    desc: "We've been in the game for awhile - experience will show!",
   },
   {
     icon: Wine,
@@ -19,8 +19,8 @@ const features = [
   },
   {
     icon: Award,
-    title: "Waterfront Ambiance",
-    desc: "Dine dockside with panoramic harbor views, live music, and unforgettable sunsets.",
+    title: "Ambiance",
+    desc: "Enjoy fresh flavors, vibrant atmosphere, and unforgettable Florida-style dining.",
   },
 ];
 
