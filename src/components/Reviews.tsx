@@ -3,18 +3,18 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Sarah M.",
-    text: "The best lobster I've ever had — and I've been to Maine. The sunset views are just the cherry on top.",
+    name: "Jonathan Frances",
+    text: "My wife and I had a fantastic dinner at Twisted Lobster in Cape Coral, and it definitely lived up to the hype as one of the top seafood places in the area! The casual, welcoming vibe is perfect—friendly staff, great service, and that laid-back Florida feel.",
     rating: 5,
   },
   {
-    name: "James & Linda K.",
-    text: "We celebrated our anniversary here and it was absolutely perfect. The Twisted Tail is a must-order.",
+    name: "Robert Arthur",
+    text: "We were looking for quality seafood for dinner that was in a causal atmosphere. Not a fancy dining experience. This place does not disappoint and you can tell as locals were there dining. The meal special for Saturday was perfect and at a fair price. Service was perfect with just the right amount of attention. We are already looking to go back soon and try some of there other meals. Nice friendly servers and staff with a 'Think Customer' mindset! Put the Twisted Lobster on your list, will not disappoint.",
     rating: 5,
   },
   {
-    name: "Carlos D.",
-    text: "Incredible cocktails and the freshest seafood. Our server knew every dish inside and out. 10/10.",
+    name: "Amber Brock",
+    text: "The food was SOOOO flavorful. Their clam chowder was the BEST I have EVER had! I ate it so fast I forgot to snap a picture. Ooops! My mom said their bacon brussel sprouts were the best she has had as well. The lobster and steak was seasoned PERFECTLY! And the portions were big!",
     rating: 5,
   },
 ];
