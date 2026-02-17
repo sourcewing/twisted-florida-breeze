@@ -32,7 +32,7 @@ const Hero = () => {
         </h1>
         <p className="text-white/70 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up opacity-0" style={{ animationDelay: "0.7s" }}>
           Indulge in Florida's finest lobster and fresh-caught seafood, prepared with bold flavors
-          and served dockside at golden hour.
+          and served at golden hour.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0" style={{ animationDelay: "0.9s" }}>
